@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="RailwayTicketingSystem.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Master page</title>
+    <link href="css/masterCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form1" runat="server">
+        <header>
+            <nav class="navigation">
+                <a href="Home.aspx">Home</a>
+                <a href="Login.aspx">Login</a>
+                <a href="SignUp.aspx">Sign up</a>
+                <a href="Schedule.aspx">schedule</a>
+                <a href="Admin.aspx">admin</a>
+                <a href="Fares.aspx">Fares</a>
+                 <a href="Book.aspx">BOOK</a>
+                <a href="ContactUs.aspx">contact us</a>
+                <a href="Feedback.aspx">Feedback</a>
+            </nav>
+        </header>
+
+        <div id="page">
+            <asp:ContentPlaceHolder ID="mainpage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p class="footer-text">Railway System &copy; 2023 All Rights Reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>
